@@ -1,6 +1,8 @@
 
 # Simple Firewall
 
+[ChatGPT](https://chatgpt.com) helped me.
+  
 ## Overview
 
 This project monitors specified files for changes and processes IP addresses according to configuration rules. The software configures **ipset** and **iptables** if the configuration does not already exist. When a regular expression in the configuration file matches a new line in the log file, it captures the IP address and updates the ipset accordingly to :
@@ -13,7 +15,8 @@ The default configuration works with IPv4 on a Debian server, iptables and ipset
 
 Configuration is provided in a JSON file with the following structure:
 
-````json{
+````json
+{
   "firewall-name": "fw-simple",
   "path-iptables-ipset": "/sbin:/usr/sbin",
   "reject-timeout": 7200,
