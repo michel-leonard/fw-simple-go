@@ -9,7 +9,7 @@ This project monitors specified files for changes and processes IP addresses acc
 - **accept** an IP
 - **reject** an IP using, depending on the configuration, a bitmask and a timeout
 
-The default configuration works with IPv4 on a Debian server, iptables and ipset must be installed beforehand.
+The default configuration works with IPv4 on a Debian server, iptables, ipset, and **inotify** must be installed beforehand.
 
 ## Configuration
 
