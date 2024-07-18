@@ -1,0 +1,16 @@
+{
+  "firewall-name": "fw-simple",
+  "path-iptables-ipset": "/sbin:/usr/sbin",
+  "reject-timeout": 7200,
+  "reject-bitmask-length": 24,
+  "files": {
+    "/var/log/log-file-1": {
+      "accept": [ "regex accepting (__IP__) in file 1" ],
+      "reject": [  "regex rejecting (__IP__) in file 1" ]
+    },
+    "/var/log/log-file-2": {
+      "accept": [ "regex accepting (__IP__) in file 2" ],
+      "reject": [  "regex rejecting (__IP__) in file 2" ]
+    }
+  }
+}
